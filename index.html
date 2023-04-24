@@ -19,13 +19,16 @@
     }
 
     header{
-        background-color: #1b413c;
-        height: 27%;
-        min-width: 30%;
-        max-width: 40%;
+        background-color: None;
+        height: 30%;
+        min-width: 10%;
+        max-width: 15%;
+        margin: 15px;
         margin-left: auto;
         margin-right: auto;
-        border-radius: 3px;
+        border-radius: 10px;
+        border: #fff solid 3px;
+        
     }
 
     #header-left{
@@ -53,13 +56,13 @@
         color: #fff;
         font-size: 50px;
         text-align: center;
-        margin: 15px;
+        margin: 3px;
     }
 
     #cim h1{
         margin: 0px;
-        color: #ffffffb8;
-        text-shadow: 0px 0px 10px #5F8D4E;
+        color: #fff;
+        text-shadow: 0px 0px 20px #54B435;
         font-size: 100%;
     }
 
@@ -87,9 +90,13 @@
     }
 
     #center{
-        background-color: #245953;
+        background-color: None;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 10px;
+        width: 40%;
+        border: #fff solid 3px;
+        
     }
 
     nav{
@@ -106,20 +113,21 @@
 
     li{
         display: inline-flex;
-        background-color: #5F8D4E;
+        background-color: #54B435;
         padding: 10px;
-        border-radius: 2px;
+        border-radius: 10px;
+        /*border: #fff solid 2px;*/
         margin: 3px;
     }
 
     .left{
         float: left;
         left: 0px;
+
     }
     .right{
         float: right;
         right: 0px;
-        
     }
 
     .colorles-mid{
@@ -129,113 +137,182 @@
         display:flex;
         justify-content: space-between;
         /*overflow-y: scroll;*/
+        
     }
 
     .mid{
-        background-color: #245953;
+        background-color: None;
         color: #fff;
         margin: 15px;
         padding: 10px;
-        border-radius: 3px;
-        border: #A4BE7B solid 3px;
+        border-radius: 10px;
+        border: #fff solid 3px;
         position: relative;
         display:block;
     }
 
     footer{
-        background-color: #245953;
+        background-color: None;
         color: #fff;
         position:relative;
+        width: 15%;
+        height: 60px;
         bottom: 0px;
         padding: 10px;
-        left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        border: #fff solid 3px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 3px #fff;
     }
 
-    #box1{
+    footer h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #box1, #box2{
         width: 40%;
         margin: 0px;
-        background-color: #5F8D4E;
+        background-color: #54B435;
         text-align: center;
-        border-radius: 5px;
-        color: #fff;
+        border-radius: 15px;
+        color: #E3F6FF;
+        /*border: #fff solid 3px;*/
+        /*box-shadow: 0px 0px 2px 0px #fff;*/
         
         /*
         display:block;
         position: relative;*/
     }
-   
-    #box2{
-        width: 40%;
-        margin: 0px;
-        background-color: #5F8D4E;
-        text-align: center;
-        border-radius: 5px;
-        color: #fff;
+
+    .split-box{
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media only screen and (max-width: 800px) {
+        #box1, #box2{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .split-box{
+            display: table;
+        }
         
-        /*
-        display:block;
-        position: relative;*/
+        #center{
+            width: 70%;
+        }
+    }
+
+    
+    @media only screen and (max-width: 1100px) {
+        #cim{
+            font-size:smaller ;
+            width: 100%;
+        }   
+        header{
+            margin: auto;
+            border: none;
+        }
+
+        li{
+            display: flex;
+        }
+        nav ul {
+            padding: 0px;
+        }
+        #center{
+            width: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 1900px) {
+        #cim{
+            font-size:xx-large ;
+        }    
+    
+    }
+
+    #box1 p, #box2 p{
+        background-color: #E3F6FF;
+        margin: 10px;
+        color: #54B435;
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: bolder;
     }
 
     .blur{
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        backdrop-filter: blur(10px);
+        padding: 15px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        border: #fff solid 3px;
+        box-shadow: 0px 0px 15px 3px #fff;
+        position: relative;
     }
+
+    
 
 </style>
 <body>
+    <div class="blur">
+        <header>
+            <div id="cim">
 
-    <header>
-        <div id="line">
-            
-        </div>
-        <div id="cim">
-            <div>
                 <h1>Cloaths</h1>
+
             </div>
+        </header>
+
+        <div id="center">
+            <nav>
+                <ul>
+                    <li><a href="">Ferfi</a></li>
+                    <li><a href="">Női</a></li>
+                    <li><a href="">Gyerek</a></li>
+                    <li><a href="">Rólunk</a></li>
+                    <li><a href="">Elérhetőség</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
 
-    <div id="center">
-        <nav>
-            <ul>
-                <li><a href="">Ferfi</a></li>
-                <li><a href="">Női</a></li>
-                <li><a href="">Gyerek</a></li>
-                <li><a href="">Rólunk</a></li>
-                <li><a href="">Elérhetőség</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="colorles-mid">
-        <div class="mid">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus harum quo libero nam odit suscipit fugiat corrupti dolorum nulla explicabo reprehenderit aliquam culpa, iure sequi vel non maiores inventore ipsa?</p>
-        </div>
-    </div>
-
-    <div class="colorles-mid">
-        <div class="left" id="box1">
-            <div>
-                <h2>About us</h2>
+        <div class="colorles-mid">
+            <div class="mid">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus harum quo libero nam odit suscipit fugiat corrupti dolorum nulla explicabo reprehenderit aliquam culpa, iure sequi vel non maiores inventore ipsa?</p>
             </div>
         </div>
 
-        
-        <div class="right" id="box2">
-            <h2>Products</h2>
+        <div class="colorles-mid split-box">
+
+           
+                <div class="left" id="box1">
+                    <h2>About us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tempora debitis deserunt voluptates deleniti, animi, esse error, expedita amet iusto odio? Repudiandae sunt ex eum explicabo dolor quas, et excepturi.</p>
+                </div>
+    
+    
+                <div class="right" id="box2">
+                    <h2>Products</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero tempora debitis deserunt voluptates deleniti, animi, esse error, expedita amet iusto odio? Repudiandae sunt ex eum explicabo dolor quas, et excepturi.</p>
+                </div>
+            
+
         </div>
-        
+
+        <div class="colorles-mid">
+            <div class="mid">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus harum quo libero nam odit suscipit fugiat corrupti dolorum nulla explicabo reprehenderit aliquam culpa, iure sequi vel non maiores inventore ipsa?</p>
+            </div>
+        </div>
     </div>
 
-    <div class="colorles-mid">
-        <div class="mid">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus harum quo libero nam odit suscipit fugiat corrupti dolorum nulla explicabo reprehenderit aliquam culpa, iure sequi vel non maiores inventore ipsa?</p>
-        </div>
-    </div>
+    
+    
 
-    <footer>
-        <h3>Made by Lengyel Balint</h3>
-    </footer>
 </body>
 </html>
