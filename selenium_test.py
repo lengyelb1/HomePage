@@ -14,27 +14,27 @@ bongeszo.maximize_window()
 time.sleep(3)
 
 
-btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/a[1]/li')
+btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/li[1]/a')
 btn.click()
 time.sleep(1)
 bongeszo.save_screenshot('printscreen1.png')
 
-btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/a[2]/li')
+btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/li[2]/a')
 btn.click()
 time.sleep(1)
 bongeszo.save_screenshot('printscreen2.png')
 
-btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/a[3]/li')
+btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/li[3]/a')
 btn.click()
 time.sleep(1)
 bongeszo.save_screenshot('printscreen3.png')
 
-btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/a[4]/li')
+btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/li[4]/a')
 btn.click()
 time.sleep(1)
 bongeszo.save_screenshot('printscreen4.png')
 
-btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/a[5]/li')
+btn = bongeszo.find_element(By.XPATH, '/html/body/div/div[1]/nav/ul/li[5]/a')
 btn.click()
 time.sleep(1)
 bongeszo.save_screenshot('printscreen5.png')
